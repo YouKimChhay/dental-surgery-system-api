@@ -1,0 +1,33 @@
+### get all dentists
+GET http://localhost:8080/dentalSurgerySystem/api/v1/dentists
+
+### get a dentist by id
+GET http://localhost:8080/dentalSurgerySystem/api/v1/dentists/1
+
+### add a new dentist
+POST http://localhost:8080/dentalSurgerySystem/api/v1/dentists
+Content-Type: application/json
+
+{
+  "firstName": "Tom",
+  "lastName": "Cruise",
+  "phone": "555-123-6066",
+  "email": "tomc@ads.com",
+  "specialization": "dental implant"
+}
+
+### update a dentist by id
+PUT http://localhost:8080/dentalSurgerySystem/api/v1/dentists/5
+Content-Type: application/json
+
+{
+  "id": 5,
+  "firstName": "Tom",
+  "lastName": "Cruise",
+  "phone": "555-123-6066",
+  "email": "tomc@ads.com",
+  "specialization": "Endodontics"
+}
+
+### delete a dentist by id
+DELETE http://localhost:8080/dentalSurgerySystem/api/v1/dentists/4

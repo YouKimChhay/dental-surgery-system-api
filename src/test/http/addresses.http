@@ -1,0 +1,2 @@
+### get all addresses sorted by city
+GET http://localhost:8080/adsweb/api/v1/patients/addresses
